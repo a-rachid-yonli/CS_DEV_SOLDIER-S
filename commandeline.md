@@ -1,17 +1,17 @@
 exercice 1
-
+cd ~
 mkdir cli_tmp
 touch cli_tmp / je_suis_dans_tmp.txt
 cd cli_tmp -> touchez in_cli_tmp.html
 mkdir in_cli_tmp
 rm je_suis_dans_tmp.txt
-cd .. -> rm -rf cli_tmp
-mkdir grand_parent parent gran_frere grande_soeur ami connaissances
-cd gran_frere 
+cd .. -> rm -r cli_tmp
+mkdir -p grand_parent/parent/gran_frere/grande_soeur/ami/connaissances
+cd grand_parent/parent/grand_frere 
 touch bachir.xls
-mv bachir.xls ami 
-cp -r ami parent 
-cd ami -> rm bachir.xls
+mv bachir.xls /grande_soeur/ami 
+cp -r ami ../../parent 
+rm ../ami bachir.txt
 pwd
 cd ~
 rm -r cli_tmp "" "le dossier cli_tmp a ete deja supprimmer depuis la question 6" ""
@@ -26,40 +26,40 @@ mkdir voitures -> cd voitures -> touch mes_voitures.txt "" j'ai creer le dossier
 echo "benz toyota honda"> voitures.txt
 cd .. -> mkdir ustensiles -> cd ustensiles "" "j'ai creer le dossier ustensiles car il n'existe pas au début de l'exo" ""
 touch cuisine.txt -> echo "cuillere fourchette assiette"> cuisine.txt
-chat cuisine.txt
+cat cuisine.txt
 cd .. -> ls -alt
 
 exercice 3
 
 pwd
 ls
-mkdir actualites politiques
-cd politiques -> élections mkdir
-touch elections / candidat.txt -> echo "yonli abdoul rachid"> candidat.txt
-cd .. -> cd actualite -> mkdir buzz
+mkdir -p actualites/politiques
+mkdir actualités/politiques elections
+touch actualités/politique/elections / candidat.txt -> echo "yonli abdoul rachid"> candidat.txt
+cd actualités -> mkdir buzz
 
 exercice 4
 
-pwd
+pwd -> desktop
 touch .configuration.txt
 ls -a
-crayons de création mkdir
-touch crayons / couleurs.txt
-cp couleurs.txt colours.txt
-création de cd -> touch gomme.txt
-crayons mv gomme.txt 
+mkdir -p creation/crayons
+touch creation/crayons couleurs.txt
+cp creation/couleur couleurs.txt colours.txt 
+cd creation -> touch gomme.txt
+mv gomme.txt crayons 
 cd ~
-cd desktop / exercices / exercice4 / creation
+cd desktop/exercices /exercice4 /creation
 
 exercice 5
 
 mkdir ma_classe
 touch mes_camarades.txt -> echo "rachid abdoul omar wahab abdoul"> mes_camarades.txt
-chat mes_camarades.txt
-touchez .surveillant.css
+cat mes_camarades.txt
+touche .surveillant.css
 ls -a 
 rm .surveillant.css
-rm -rf ma_classe 
+rm -r ma_classe 
 
 exercice 6
 
